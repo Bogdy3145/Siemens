@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myquiz.css">
+    <title>Quiz Question</title>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h2 id="question-number">Question 1/50:</h2>
+
+    <div id="question-container">Q</div>
+
+    <p>Select the correct answer:</p>
+    
+    <!-- Add a div for displaying the question -->
+    
+    <form id="quiz-form">
+        <input type="radio" name="answer" id ="btnAnswer1" value="A">
+        <label for="btnAnswer1" id = "answer1">Option A</label><br>
+        
+        <input type="radio" name="answer" id="btnAnswer2" value="B">
+        <label for="btnAnswer2" id = "answer2">Option B</label><br>
+        
+        <input type="radio" name="answer" id="btnAnswer3" value="C">
+        <label for="btnAnswer3" id="answer3">Option C</label><br>
+        
+        <input type="radio" name="answer" id="btnAnswer4" value="D">
+        <label for="btnAnswer4" id="answer4">Option D</label><br>
+        
+        <button type="button" onclick="submitQuiz()">Submit</button>
+
+        <p id="score">Score: 0</p>
+    </form>
+</div>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>
